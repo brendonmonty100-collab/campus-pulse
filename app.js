@@ -8,7 +8,7 @@ app.use(express.json());
 let feedbackList = [];
 let nextId = 1;
 
-const CATEGORIES = ['Academics', 'Hostel', 'Mess', 'Facilities', 'Transport'];
+const CATEGORIES = ['Academics', 'Hostel', 'Mess', 'Facilities', 'Transport','Library'];
 const MOODS = ['Good', 'Okay', 'Bad'];
 
 const MOOD_ICON = { Good: 'GD', Okay: 'OK', Bad: 'BD' };
