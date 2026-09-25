@@ -16,7 +16,7 @@ const MOOD_ICON = { Good: 'GD', Okay: 'OK', Bad: 'BD' };
 // escape user input so no one can inject HTML/script tags through the form
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 
-const sha = process.env.GIT_SHA || process.env.RENDER_GIT_COMMIT || 'local';
+const sha = process.env.RENDER_GIT_COMMIT || process.env.GIT_SHA || 'local';
 const commit = sha.slice(0, 7);
 
 function pageStyles() {
